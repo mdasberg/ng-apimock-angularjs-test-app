@@ -1,0 +1,14 @@
+h1 {
+    font-size: 20px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #3c763d;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+hr {
+    border: none;
+    border-bottom: 1px solid #3c763d
+}

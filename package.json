@@ -1,0 +1,39 @@
+{
+  "name": "ng-apimock-angularjs-test-app",
+  "description": "AngularJs example application to test ng-apimock",
+  "version": "1.0.1",
+  "homepage": "https://github.com/mdasberg/ng-apimock-angularjs-test-app.git",
+  "author": {
+    "name": "Mischa Dasberg",
+    "email": "mischa@dasberg.nl"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdasberg/ng-apimock-angularjs-test-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mdasberg/ngapimock-angularjs-test-app/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/mdasberg/ngapimock-angularjs-test-app/blob/master/LICENSE-MIT"
+    }
+  ],
+  "scripts": {
+    "clean": "rm -rf dist && rm -rf .tmp && mkdir .tmp",
+    "templateCache": "nghtml2js --no-new-module -m 'example' -f 'src/example/*.html' -p src/ -o .tmp/templates.bundle.js",
+    "prebuild": "npm run clean && npm run templateCache",
+    "build": "usemin --rmlr src/index.html -d dist -o dist/index.html",
+    "postbuild": "rm -rf .tmp"
+  },
+  "dependencies": {
+    "angular": "1.6.9",
+    "angular-resource": "1.6.9"
+  },
+  "devDependencies": {
+    "angular-template-cache": "1.2.0",
+    "concat": "1.0.3",
+    "usemin-cli": "0.5.1"
+  }
+}

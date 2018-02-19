@@ -1,0 +1,27 @@
+<html>
+<head>
+    <!-- build:css example.css -->
+    <link rel="stylesheet" type="text/css" href="example/example.css"/>
+    <!-- endbuild -->
+    <!-- build:js(..) vendor.bundle.js -->
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/angular-resource/angular-resource.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js main.bundle.js -->
+    <script src="test.module.js"></script>
+    <script src="example/example.service.js"></script>
+    <script src="example/example.controller.js"></script>
+    <script src="example/example.component.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js(..) templates.bundle.js -->
+    <script src=".tmp/templates.bundle.js"></script>
+    <!-- endbuild -->
+
+    <title>ngapimock</title>
+</head>
+<body ng-app="example">
+    <example></example>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<h1>ng-apimock test example app</h1>
+
+<h2>response</h2>
+<p>
+    data: <span class="data">{{$ctrl.response.body}}</span> <br/>
+    status: <span class="status">{{$ctrl.response.status | json}}</span><br/>
+    done: <span class="done">{{$ctrl.done}}</span>
+</p>
+
+<hr/>
+
+<button ng-click="$ctrl.get()">get</button>
+<button ng-click="$ctrl.binary()">binary</button>
+<button ng-click="$ctrl.getAsJsonp()">get as jsonp</button>
+
+<hr/>
+
+<input type="text" id="item" name="item" ng-required ng-model="$ctrl.item">
+<button type="submit" class="btn btn-success" ng-click="$ctrl.post()">post</button>
+
+<hr/>
